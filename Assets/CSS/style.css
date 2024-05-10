@@ -1,0 +1,220 @@
+:root {
+    --bg1: #3c393c;
+    --bg2: rgb(44, 42, 42);
+    --body: rgb(95, 86, 86);
+    --brand: #f2b03b;
+    --white: rgb(156, 154, 154);
+    --p: rgb(161, 150, 150);
+}
+
+#about {
+    background-color: var(--bg1);
+   position: relative;
+   z-index: 1;
+}
+
+#banner {
+    min-height: 100vh;
+    background: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 42, 0.315)),
+        url('https://img.freepik.com/free-photo/beautiful-creative-master-with-dreadlocks-is-working-new-peace-big-leg-tattoo-customer_613910-19715.jpg?t=st=1711081687~exp=1711085287~hmac=4a10b3fc0d1a2a4aa00bf05992cf59586f37c31f07e3677c0967ed484c93dc63&w=1380');
+    background-size: cover;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, hsla(0, 2%, 17%, 0.829), rgba(44, 42, 42, 0.884));
+
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+}
+
+.navbar #navbarNav .nav-link.active {
+    color: var(--brand) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--brand) !important;
+}
+
+.navbar-brand img {
+    width: 30%;
+}
+
+.btn {
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+}
+
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: white;
+    border-color: var(--brand);
+}
+
+.btn-outline-brand:hover{
+    background-color: var(--brand);
+    color: var(--bg1);
+}
+.btn-outline-brand{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--bg1);
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#services {
+    background-color: var(--white);
+}
+
+.icon-box-img {
+    width: 40%;
+}
+
+.card {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card:hover {
+    background-color: var(--bg1);
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: #ffffff;
+}
+
+#cta {
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 42, 0.315)), url(https://as2.ftcdn.net/v2/jpg/02/85/95/99/1000_F_285959971_lqHCYbc32TAfPzJrVa7NxEsGVLe5uPJW.jpg);
+    min-height: 70vh;
+}
+
+#reviews {
+    background-color: #ffffff;
+}
+
+.testimonials {
+    padding: 30px;
+    background-color: var(--bg1);
+    border-radius: 1px;
+}
+
+.testimonials img {
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+}
+
+#reviews h6 a{
+    text-decoration: none;
+    color: var(--brand);
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    /* add margin bottom for spacing */
+    border-radius: 0 !important;
+}
+
+.accordion-button {
+    background-color: #f8f9fa;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 0;
+    padding: 15px;
+    font-weight: 500;
+    color: #343a40;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-body {
+    border-left: 3px solid var(--brand);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: azure;
+}
+
+.faq-answer p {
+    margin-bottom: 0;
+}
+
+.accordion-button :focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bg1);
+}
+
+/* hover effect for FAQ questions */
+.accordion-button:hover {
+    background-color: var(--brand);
+    color: var(--bg1);
+    /* change text color on hover */
+}
+
+/* Adjust accordion  icon */
+.accordion-button::after {
+    font-family: "Font-Awesome 5 Free";
+    content: ""; /* Plus icon*/
+    float:right; 
+    font-weight: 900;
+    margin-left:auto;
+}
+
+.accordion button [area-expanded="true"]::after{
+    content: "";
+    /*Minus icon*/
+}
+
+/*footer*/
+#footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--bg1);
+}
+
+#footer ul.list-unstyled li a {
+    color: #ffffff;
+}
+
+#footer ul.list-unstyled li:hover a {
+    color: var(--brand)
+}
+
+#reviews h2, #services h2{
+    color: var(--brand);
+}
+
+.btn-outline-light {
+    border-color: #f2b03b !important;
+    color: #f2b03b;
+}
+
+.navbar-brand-footer img {
+    width: 30% !important;
+}
